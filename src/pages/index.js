@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 import Music from '../components/Music';
-import Chart from '../components/Chart';
 import Controls from '../components/Controls';
 import Printer from '../components/Printer';
 import Footer from '../components/Footer';
@@ -48,7 +47,6 @@ const Home = () => {
         <Container>
             <Music {...playbackProps} />
             <Main>
-                <Chart symbol={symbol} className={shakeClass} />
                 <Printer {...playbackProps} className={shakeClass} />
                 <Controls
                     handleRateSlider={handleRateSlider}

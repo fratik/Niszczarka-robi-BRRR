@@ -1,6 +1,6 @@
 import { bool, number, func } from 'prop-types';
 import styled from 'styled-components';
-import YouTubePlayer from 'react-player/lib/players/YouTube';
+import FilePlayer from 'react-player/lib/players/FilePlayer';
 import Player from './Player';
 
 const MusicPlayer = styled(Player)`
@@ -16,8 +16,8 @@ const MusicPlayer = styled(Player)`
 
 const Music = ({ playbackRate, handleToggleMute, ...props }) => (
     <MusicPlayer
-        url="https://www.youtube.com/watch?v=fTFxE32onKs"
-        player={YouTubePlayer}
+        url="/a.mp4"
+        player={FilePlayer}
         play={player => player && player.playVideo && player.playVideo()}
         playbackRate={Math.max(playbackRate / 25, 0.25)}
         config={{

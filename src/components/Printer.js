@@ -12,7 +12,7 @@ const Container = styled.div`
     min-height: 100%;
     ${({ ready }) =>
         !ready &&
-        `background: url('print.gif') center center / contain no-repeat #FFF;`}
+        `background: url('print.gif') center center / contain no-repeat #E3E3E3;`}
     z-index: -1;
 
     @media only screen and (max-width: 768px) {
@@ -61,18 +61,10 @@ const Printer = ({
 
     return (
         <Container ready={ready} {...props}>
-            <Block />
             <PrinterPlayer
-                url="print.mp4"
+                url="a.mp4"
                 player={FilePlayer}
                 play={player => player.play()}
-                config={{
-                    file: {
-                        attributes: {
-                            poster: 'print.gif'
-                        }
-                    }
-                }}
                 width="100%"
                 height="100%"
                 playsinline

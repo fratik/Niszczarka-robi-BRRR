@@ -3,10 +3,10 @@ import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 import 'focus-visible';
 
-const title = 'Money printer go BRRR';
-const description = 'Print it, baby!';
-const author = 'Institute for Memetic Research & Development';
-const url = 'https://brrr.money';
+const title = 'Niszczarka robi BRRR';
+const description = 'sasin niszczy karty wyborcze';
+const author = 'Institute for Memetic Research & Development / fratik';
+const url = 'nie ma';
 const brandColor = '#000000';
 
 const GlobalStyle = createGlobalStyle`

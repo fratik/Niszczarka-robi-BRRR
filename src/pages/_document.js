@@ -33,7 +33,7 @@ class Document extends NextDocument {
         return (
             <Html lang="en">
                 <Head />
-                <body>
+                <body style={{backgroundColor: "#e3e3e3"}}>
                     <Main />
                     <NextScript />
                 </body>
